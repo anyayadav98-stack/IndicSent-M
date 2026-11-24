@@ -1,0 +1,76 @@
+{
+  "model": "image",
+  "name": "Image-Only (ResNet50)",
+  "accuracy": 0.3185,
+  "macro_f1": 0.3084,
+  "weighted_f1": 0.3222,
+  "per_class": {
+    "Negative": {
+      "precision": 0.3891,
+      "recall": 0.3972,
+      "f1_score": 0.3931,
+      "support": 287
+    },
+    "Neutral": {
+      "precision": 0.3649,
+      "recall": 0.2683,
+      "f1_score": 0.3092,
+      "support": 287
+    },
+    "Positive": {
+      "precision": 0.1899,
+      "recall": 0.2695,
+      "f1_score": 0.2228,
+      "support": 167
+    }
+  },
+  "confusion_matrix": [
+    [
+      114,
+      81,
+      92
+    ],
+    [
+      110,
+      77,
+      100
+    ],
+    [
+      69,
+      53,
+      45
+    ]
+  ],
+  "test_samples": 741,
+  "best_epoch": 7,
+  "total_training_time_seconds": 69.18,
+  "seeds_summary": {
+    "seeds": [
+      {
+        "seed": 42,
+        "val_macro_f1": 0.34656454656454655,
+        "val_accuracy": 0.35405405405405405,
+        "best_epoch": 7,
+        "train_time": 69.17717146873474
+      },
+      {
+        "seed": 123,
+        "val_macro_f1": 0.3292063079084413,
+        "val_accuracy": 0.35,
+        "best_epoch": 7,
+        "train_time": 55.48736810684204
+      },
+      {
+        "seed": 999,
+        "val_macro_f1": 0.34641286071335414,
+        "val_accuracy": 0.3621621621621622,
+        "best_epoch": 5,
+        "train_time": 46.15661001205444
+      }
+    ],
+    "val_macro_f1_mean": 0.340727905062114,
+    "val_macro_f1_std": 0.008147234822441379,
+    "val_accuracy_mean": 0.35540540540540544,
+    "val_accuracy_std": 0.005056293765910749
+  }
+}

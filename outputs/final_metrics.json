@@ -1,0 +1,319 @@
+{
+  "test_samples": 741,
+  "official_metric": "Weighted F1",
+  "models": {
+    "image": {
+      "model_key": "image",
+      "name": "Image-Only (ResNet50)",
+      "accuracy": 0.3198,
+      "macro_f1": 0.3092,
+      "weighted_f1": 0.3233,
+      "ci_95": {
+        "accuracy": {
+          "mean": 0.319970310391363,
+          "std": 0.017246857754390867,
+          "ci_lower": 0.2874493927125506,
+          "ci_upper": 0.3535762483130904
+        },
+        "macro_f1": {
+          "mean": 0.3087720206685262,
+          "std": 0.016931166124315104,
+          "ci_lower": 0.27635124063720456,
+          "ci_upper": 0.34301274155724504
+        },
+        "weighted_f1": {
+          "mean": 0.3235896369171943,
+          "std": 0.017555586510500445,
+          "ci_lower": 0.2884000204926099,
+          "ci_upper": 0.3569142045175326
+        }
+      },
+      "per_class": {
+        "Negative": {
+          "precision": 0.3864,
+          "recall": 0.3972,
+          "f1": 0.3918,
+          "support": 287
+        },
+        "Neutral": {
+          "precision": 0.3657,
+          "recall": 0.2753,
+          "f1": 0.3141,
+          "support": 287
+        },
+        "Positive": {
+          "precision": 0.1913,
+          "recall": 0.2635,
+          "f1": 0.2217,
+          "support": 167
+        }
+      },
+      "confusion_matrix": [
+        [
+          114,
+          83,
+          90
+        ],
+        [
+          112,
+          79,
+          96
+        ],
+        [
+          69,
+          54,
+          44
+        ]
+      ],
+      "prediction_distribution": {
+        "Negative": 295,
+        "Neutral": 216,
+        "Positive": 230
+      },
+      "prediction_percentages": {
+        "Negative": 39.8,
+        "Neutral": 29.1,
+        "Positive": 31.0
+      },
+      "predicts_mostly_one_class": false,
+      "majority_predicted_class": "Balanced"
+    },
+    "text": {
+      "model_key": "text",
+      "name": "Text-Only (XLM-R)",
+      "accuracy": 0.3725,
+      "macro_f1": 0.3388,
+      "weighted_f1": 0.3543,
+      "ci_95": {
+        "accuracy": {
+          "mean": 0.37220647773279353,
+          "std": 0.018303246016174567,
+          "ci_lower": 0.3360323886639676,
+          "ci_upper": 0.40894062078272597
+        },
+        "macro_f1": {
+          "mean": 0.3378083566855944,
+          "std": 0.017697196491578467,
+          "ci_lower": 0.30334615801342274,
+          "ci_upper": 0.3734612909352174
+        },
+        "weighted_f1": {
+          "mean": 0.35420004976669645,
+          "std": 0.01889101166815853,
+          "ci_lower": 0.3175666713018382,
+          "ci_upper": 0.39215430436712834
+        }
+      },
+      "per_class": {
+        "Negative": {
+          "precision": 0.4238,
+          "recall": 0.223,
+          "f1": 0.2922,
+          "support": 287
+        },
+        "Neutral": {
+          "precision": 0.4019,
+          "recall": 0.5993,
+          "f1": 0.4811,
+          "support": 287
+        },
+        "Positive": {
+          "precision": 0.2469,
+          "recall": 0.2395,
+          "f1": 0.2432,
+          "support": 167
+        }
+      },
+      "confusion_matrix": [
+        [
+          64,
+          158,
+          65
+        ],
+        [
+          58,
+          172,
+          57
+        ],
+        [
+          29,
+          98,
+          40
+        ]
+      ],
+      "prediction_distribution": {
+        "Negative": 151,
+        "Neutral": 428,
+        "Positive": 162
+      },
+      "prediction_percentages": {
+        "Negative": 20.4,
+        "Neutral": 57.8,
+        "Positive": 21.9
+      },
+      "predicts_mostly_one_class": true,
+      "majority_predicted_class": "Neutral"
+    },
+    "concat": {
+      "model_key": "concat",
+      "name": "Multimodal Concat Fusion",
+      "accuracy": 0.336,
+      "macro_f1": 0.3326,
+      "weighted_f1": 0.341,
+      "ci_95": {
+        "accuracy": {
+          "mean": 0.3359689608636977,
+          "std": 0.01655682859172127,
+          "ci_lower": 0.3049932523616734,
+          "ci_upper": 0.3684210526315789
+        },
+        "macro_f1": {
+          "mean": 0.3319639412721071,
+          "std": 0.016595557438275056,
+          "ci_lower": 0.30032932705078047,
+          "ci_upper": 0.36393614425446413
+        },
+        "weighted_f1": {
+          "mean": 0.3410366420314524,
+          "std": 0.016713962256340437,
+          "ci_lower": 0.30941416638097285,
+          "ci_upper": 0.3747805613916517
+        }
+      },
+      "per_class": {
+        "Negative": {
+          "precision": 0.3817,
+          "recall": 0.3206,
+          "f1": 0.3485,
+          "support": 287
+        },
+        "Neutral": {
+          "precision": 0.4059,
+          "recall": 0.338,
+          "f1": 0.3688,
+          "support": 287
+        },
+        "Positive": {
+          "precision": 0.2299,
+          "recall": 0.3593,
+          "f1": 0.2804,
+          "support": 167
+        }
+      },
+      "confusion_matrix": [
+        [
+          92,
+          91,
+          104
+        ],
+        [
+          93,
+          97,
+          97
+        ],
+        [
+          56,
+          51,
+          60
+        ]
+      ],
+      "prediction_distribution": {
+        "Negative": 241,
+        "Neutral": 239,
+        "Positive": 261
+      },
+      "prediction_percentages": {
+        "Negative": 32.5,
+        "Neutral": 32.3,
+        "Positive": 35.2
+      },
+      "predicts_mostly_one_class": false,
+      "majority_predicted_class": "Balanced"
+    },
+    "attention": {
+      "model_key": "attention",
+      "name": "Multimodal Cross-Attention",
+      "accuracy": 0.3333,
+      "macro_f1": 0.3226,
+      "weighted_f1": 0.335,
+      "ci_95": {
+        "accuracy": {
+          "mean": 0.3340782726045884,
+          "std": 0.017469441250679816,
+          "ci_lower": 0.2982456140350877,
+          "ci_upper": 0.3671052631578947
+        },
+        "macro_f1": {
+          "mean": 0.32283305478966645,
+          "std": 0.017239852188573622,
+          "ci_lower": 0.28851662444114146,
+          "ci_upper": 0.35655607996302197
+        },
+        "weighted_f1": {
+          "mean": 0.3357895946944903,
+          "std": 0.017679462795600825,
+          "ci_lower": 0.3002006485678735,
+          "ci_upper": 0.3697463861372504
+        }
+      },
+      "per_class": {
+        "Negative": {
+          "precision": 0.3831,
+          "recall": 0.2683,
+          "f1": 0.3156,
+          "support": 287
+        },
+        "Neutral": {
+          "precision": 0.3916,
+          "recall": 0.4216,
+          "f1": 0.406,
+          "support": 287
+        },
+        "Positive": {
+          "precision": 0.2121,
+          "recall": 0.2934,
+          "f1": 0.2462,
+          "support": 167
+        }
+      },
+      "confusion_matrix": [
+        [
+          77,
+          120,
+          90
+        ],
+        [
+          74,
+          121,
+          92
+        ],
+        [
+          50,
+          68,
+          49
+        ]
+      ],
+      "prediction_distribution": {
+        "Negative": 201,
+        "Neutral": 309,
+        "Positive": 231
+      },
+      "prediction_percentages": {
+        "Negative": 27.1,
+        "Neutral": 41.7,
+        "Positive": 31.2
+      },
+      "predicts_mostly_one_class": false,
+      "majority_predicted_class": "Balanced"
+    }
+  },
+  "literature_reference": {
+    "source": "Overview of Memotion 3, Mishra et al., DeFactify 2 at AAAI-23, arXiv:2309.06517",
+    "official_task_a_metric": "Weighted F1",
+    "official_task_a_baseline": 0.3328,
+    "best_shared_task_submission": 0.3441,
+    "indic_sent_m_best_model": "Text-Only (XLM-R)",
+    "indic_sent_m_best_weighted_f1": 0.3543,
+    "caveat": "Literature metrics were evaluated on the full 1,500 blind test partition via the competition server. Our held-out evaluation is conducted on the 741-sample stratified partition derived from the labeled validation corpus. Results are directly in range and indicative."
+  }
+}

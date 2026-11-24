@@ -1,0 +1,76 @@
+{
+  "model": "attention",
+  "name": "Multimodal (Cross-Attention)",
+  "accuracy": 0.3333,
+  "macro_f1": 0.3226,
+  "weighted_f1": 0.3351,
+  "per_class": {
+    "Negative": {
+      "precision": 0.3831,
+      "recall": 0.2683,
+      "f1_score": 0.3156,
+      "support": 287
+    },
+    "Neutral": {
+      "precision": 0.3929,
+      "recall": 0.4216,
+      "f1_score": 0.4067,
+      "support": 287
+    },
+    "Positive": {
+      "precision": 0.2112,
+      "recall": 0.2934,
+      "f1_score": 0.2456,
+      "support": 167
+    }
+  },
+  "confusion_matrix": [
+    [
+      77,
+      119,
+      91
+    ],
+    [
+      74,
+      121,
+      92
+    ],
+    [
+      50,
+      68,
+      49
+    ]
+  ],
+  "test_samples": 741,
+  "best_epoch": 26,
+  "total_training_time_seconds": 6234.08,
+  "seeds_summary": {
+    "seeds": [
+      {
+        "seed": 42,
+        "val_macro_f1": 0.333741699421761,
+        "val_accuracy": 0.34594594594594597,
+        "best_epoch": 18,
+        "train_time": 418.5345003604889
+      },
+      {
+        "seed": 123,
+        "val_macro_f1": 0.31933373222846906,
+        "val_accuracy": 0.3472972972972973,
+        "best_epoch": 6,
+        "train_time": 261.8503692150116
+      },
+      {
+        "seed": 999,
+        "val_macro_f1": 0.3371821605276199,
+        "val_accuracy": 0.34324324324324323,
+        "best_epoch": 26,
+        "train_time": 6234.075909614563
+      }
+    ],
+    "val_macro_f1_mean": 0.33008586405928336,
+    "val_macro_f1_std": 0.007731556433890008,
+    "val_accuracy_mean": 0.34549549549549546,
+    "val_accuracy_std": 0.0016854312553035847
+  }
+}

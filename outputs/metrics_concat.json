@@ -1,0 +1,76 @@
+{
+  "model": "concat",
+  "name": "Multimodal (Concat)",
+  "accuracy": 0.3563,
+  "macro_f1": 0.3439,
+  "weighted_f1": 0.3505,
+  "per_class": {
+    "Negative": {
+      "precision": 0.3988,
+      "recall": 0.2334,
+      "f1_score": 0.2945,
+      "support": 287
+    },
+    "Neutral": {
+      "precision": 0.3971,
+      "recall": 0.4774,
+      "f1_score": 0.4335,
+      "support": 287
+    },
+    "Positive": {
+      "precision": 0.2632,
+      "recall": 0.3593,
+      "f1_score": 0.3038,
+      "support": 167
+    }
+  },
+  "confusion_matrix": [
+    [
+      67,
+      136,
+      84
+    ],
+    [
+      66,
+      137,
+      84
+    ],
+    [
+      35,
+      72,
+      60
+    ]
+  ],
+  "test_samples": 741,
+  "best_epoch": 16,
+  "total_training_time_seconds": 210.15,
+  "seeds_summary": {
+    "seeds": [
+      {
+        "seed": 42,
+        "val_macro_f1": 0.34251497624384325,
+        "val_accuracy": 0.35405405405405405,
+        "best_epoch": 15,
+        "train_time": 175.9218521118164
+      },
+      {
+        "seed": 123,
+        "val_macro_f1": 0.3618515030351482,
+        "val_accuracy": 0.372972972972973,
+        "best_epoch": 16,
+        "train_time": 210.14827489852905
+      },
+      {
+        "seed": 999,
+        "val_macro_f1": 0.33857700813663555,
+        "val_accuracy": 0.34459459459459457,
+        "best_epoch": 10,
+        "train_time": 114.29261779785156
+      }
+    ],
+    "val_macro_f1_mean": 0.3476478291385423,
+    "val_macro_f1_std": 0.010171370354224257,
+    "val_accuracy_mean": 0.3572072072072072,
+    "val_accuracy_std": 0.011798018787125058
+  }
+}
